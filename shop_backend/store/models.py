@@ -21,7 +21,7 @@ class Product(models.Model):
 
 class Order(models.Model):
     created_at = models.DateTimeField(auto_now_add=True)
-    products = models.ManyToManyRel(Product, through='OrderItem')
+    products = models.ManyToManyField(Product, through='OrderItem')
  
     
 class OrderItem(models.Model):
