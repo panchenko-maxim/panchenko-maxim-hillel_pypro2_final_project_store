@@ -3,14 +3,14 @@
 </template>
 
 <script>
-import { cart } from './store/cart.js'
+import { shoppingCart } from './store/shoppingCart.js'
 
 export default {
   setup() {
-    return { cart }
+    return { shoppingCart }
   },
   provide() {
-    return { cart: this.cart }
+    return { shoppingCart: this.shoppingCart }
   }
 }
 </script>

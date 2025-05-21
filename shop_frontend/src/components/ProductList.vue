@@ -18,8 +18,8 @@ import { inject } from 'vue';
 
 export default {
     setup() {
-        const cart = inject('cart')
-        return { cart }
+        const shoppingCart = inject('shoppingCart')
+        return { shoppingCart }
     },
     data() {
         return {
@@ -32,7 +32,7 @@ export default {
             this.products = response.data
         },
         addToCart(product) {
-            this.cart.add(product)
+            this.shoppingCart.add(product)
         },
     },
     mounted() {
